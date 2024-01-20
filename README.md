@@ -1,4 +1,4 @@
-#### setup
+# setup
 
 ```
 pip install -r requirements.txt
@@ -15,7 +15,7 @@ please refer to the offical document from google for credentials and api key set
 https://developers.google.com/youtube/v3
 https://cloud.google.com/vertex-ai
 
-#### run 
+# run 
 
 ```
 python main.py > result.csv
@@ -25,7 +25,7 @@ typically if a video has confidence score of more than 0.9, this is very likely 
 
 if score is -1.0, it means the process encounter an error, and you can retry it if needed
 
-#### prompts
+# prompts
 
 search keywords generation (GPT-4)
 
