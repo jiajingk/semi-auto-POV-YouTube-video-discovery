@@ -1,0 +1,6 @@
+python-dotenv
+tqdm
+opencv-python
+pytube
+google-api-python-client
+google-cloud-aiplatform
