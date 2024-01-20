@@ -1,3 +1,7 @@
+# system
+
+![Alt text](assets/semi-auto-pov-system-diagram.png?raw=true "system diagram")
+
 # setup
 
 ```
