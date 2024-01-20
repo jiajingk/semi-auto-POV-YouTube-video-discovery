@@ -7,7 +7,8 @@ import shutil
 import uuid
 
 
-def sample_frames(video_path, folder_path, k):
+def sample_frames(video_path: str, folder_path: str, k: int) -> int:
+    assert os.path.exists(video_path)
     if not os.path.exists(folder_path):
         os.makedirs(folder_path)
     cap = cv2.VideoCapture(video_path)
