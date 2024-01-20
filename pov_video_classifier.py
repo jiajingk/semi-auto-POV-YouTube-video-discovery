@@ -75,10 +75,12 @@ def measure_pov_confidence_from_frames(frame_dir: str, n_sample: int) -> float:
         image_path = os.path.join(frame_dir, f'{i}.jpg')
         try:
             result = detect_first_person(image_path)[0]
-        except:
-            result = 'no'
+        except Exception as e:
+            result = 'error'
         if result.lower() == 'yes':
             scores += 1.0
+        elif result.lower() == 'error':
+            return -1.0
     return scores / n_sample
 
 
