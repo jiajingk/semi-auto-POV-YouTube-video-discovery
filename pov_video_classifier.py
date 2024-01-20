@@ -16,12 +16,9 @@ def sample_frames(video_path, folder_path, k):
     for i in range(k):
         cap.set(cv2.CAP_PROP_POS_FRAMES, i * interval)
         ret, frame = cap.read()
-
-        # If frame reading was successful, save it
         if ret:
             cv2.imwrite(f"{folder_path}/{i}.jpg", frame)
         else:
-            print(f"Error: Could not read frame {i}")
             cap.release()
             return i
     cap.release()
@@ -49,7 +46,6 @@ def sample_frames_per_minute(video_path: str, folder_path: str, k: int) -> int:
         if ret:
             cv2.imwrite(f"{folder_path}/{i}.jpg", frame)
         else:
-            #print(f"Error: Could not read frame {i}")
             break
     cap.release()
     return total_samples
