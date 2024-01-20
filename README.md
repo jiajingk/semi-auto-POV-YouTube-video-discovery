@@ -25,9 +25,9 @@ https://cloud.google.com/vertex-ai
 python main.py > result.csv
 ```
 
-typically if a video has confidence score of more than 0.9, this is very likely to be a valid video
+typically if a video has confidence score of more than `0.9`, this is very likely to be a valid video
 
-if score is -1.0, it means the process encounter an error, and you can retry it if needed
+if score is `-1.0`, it means the process encounter an error, and you can retry it if needed
 
 # prompts
 
