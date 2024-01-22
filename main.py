@@ -13,7 +13,7 @@ def measure_url_score(url):
     return score
 print("url, score")
 key_words_gen = KeywordsGenerator()
-for keywords in key_words_gen.next_keyworks(1):
+for keywords in key_words_gen.next_keyworks(take=1):
     for url in search_youtube(keywords):
         print(f"{url}, {measure_url_score(url)}")
 
